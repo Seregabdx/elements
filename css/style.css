@@ -1,0 +1,1097 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 0 0 0;
+}
+
+.buttons-container span {
+  font-weight: 500;
+}
+
+.buttons-container-prim {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons-container-prim__text {
+  color: #596172;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.buttons-container-prim__primary {
+  margin: 30px 0 0 0;
+  width: 98px;
+  height: 43px;
+  padding: 12px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #4690ff;
+  color: #ffffff;
+  background: #4690ff;
+}
+
+.buttons-container-prim__primary:hover {
+  background: #639ef8;
+  border: 1px solid #639ef8;
+}
+
+.buttons-container-prim__primary:active {
+  background: #2a7bf5;
+  border: 1px solid #2a7bf5;
+}
+
+.buttons-container-prim__primary:disabled {
+  background: #bfd8fc;
+  border: 1px solid #bfd8fc;
+}
+
+.buttons-container-sec {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons-container-sec__text {
+  color: #596172;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.buttons-container-sec__secondary {
+  margin: 30px 0 0 0;
+  width: 98px;
+  height: 43px;
+  padding: 12px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #4690ff;
+  background: #ffffff;
+  color: #4690ff;
+}
+
+.buttons-container-sec__secondary:hover {
+  background: #639ef8;
+  border: 1px solid #639ef8;
+  background: #f1f7ff;
+  color: #639ef8;
+}
+
+.buttons-container-sec__secondary:active {
+  background: #2a7bf5;
+  border: 1px solid #2a7bf5;
+  background: #e4f0ff;
+  color: #639ef8;
+}
+
+.buttons-container-sec__secondary:disabled {
+  background: #bfd8fc;
+  border: 1px solid #bfd8fc;
+  background: none;
+  border: 1px solid;
+  color: #639ff879;
+}
+
+.radio-buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px 0 0 0;
+}
+
+.radio-buttons-container input[type="radio"] {
+  display: none;
+}
+
+.radio-buttons-container label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.radio-buttons-container span {
+  font-weight: 500;
+}
+
+.radio-buttons-container-On {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-buttons-container-On__text {
+  color: #596172;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.radio-buttons-container-On-but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.radio-buttons-container-On-but span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.radio-buttons-container-On-but__On + label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.radio-buttons-container-On-but__On:checked + label::before {
+  content: "";
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:checked + label:hover:before {
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center, url("../img/radio-button/hover.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:checked + label:active:before {
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center, url("../img/radio-button/active.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:checked + label:disabled:before {
+  background: url("../img/radio-button/disableON.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:hover + label::before {
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center, url("../img/radio-button/hover.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:active + label::before {
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center, url("../img/radio-button/active.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:disabled + label::before {
+  background: url("../img/radio-button/disableOFF.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:checked:disabled + label::before {
+  background: url("../img/radio-button/disableON.png") no-repeat center;
+}
+
+.radio-buttons-container-On-but__On:disabled + label {
+  color: #dddddd;
+}
+
+.radio-buttons-container-On-but__On:hover {
+  background: url(/img/radio-button/Vector.png) 0 0 no-repeat;
+}
+
+.radio-buttons-container-Off {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.radio-buttons-container-Off__text {
+  color: #596172;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.radio-buttons-container-Off-but {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 0;
+}
+
+.radio-buttons-container-Off-but span {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.radio-buttons-container-Off-but__Off {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.radio-buttons-container-Off-but__Off + label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.radio-buttons-container-Off-but__Off:checked + label::before {
+  content: "";
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:checked + label:hover:before {
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center, url("../img/radio-button/hover.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:checked + label:active:before {
+  background: url("../img/radio-button/radio-buttonON.png") no-repeat center, url("../img/radio-button/active.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:checked + label:disabled:before {
+  background: url("../img/radio-button/disableON.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:hover + label::before {
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center, url("../img/radio-button/hover.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:active + label::before {
+  background: url("../img/radio-button/radio-buttonOFF.png") no-repeat center, url("../img/radio-button/active.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:disabled + label::before {
+  background: url("../img/radio-button/disableOFF.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:checked:disabled + label::before {
+  background: url("../img/radio-button/disableON.png") no-repeat center;
+}
+
+.radio-buttons-container-Off-but__Off:disabled + label {
+  color: #dddddd;
+}
+
+.radio-buttons-container-Off-but__Off:hover {
+  background: url(/img/radio-button/Vector.png) 0 0 no-repeat;
+}
+
+.checkbox-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.checkbox-container input[type="checkbox"] {
+  display: none;
+}
+
+.checkbox-container label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.checkbox-container__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+  margin: 0 0 15px 0;
+}
+
+.checkbox-container-checkbox {
+  margin: 10px;
+}
+
+.checkbox-container-checkbox--active + label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox/checkboxOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox-container-checkbox--active:checked + label::before {
+  background: url("../img/checkbox/checkboxON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:checked + label:hover:before {
+  background: url("../img/checkbox/hoverON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:hover + label::before {
+  background: url("../img/checkbox/hoverOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:checked + label:active:before {
+  background: url("../img/checkbox/activeON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:active + label::before {
+  background: url("../img/checkbox/activeOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:disabled + label::before {
+  background: url("../img/checkbox/disableOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:checked:disabled + label::before {
+  background: url("../img/checkbox/disableON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--active:disabled + label {
+  color: #dddddd;
+}
+
+.checkbox-container-checkbox--disable + label::before {
+  content: "";
+  display: inline-block;
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  background: url("../img/checkbox/checkboxOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable + label {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.checkbox-container-checkbox--disable:checked + label::before {
+  background: url("../img/checkbox/checkboxON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:checked + label:hover:before {
+  background: url("../img/checkbox/hoverON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:hover + label::before {
+  background: url("../img/checkbox/hoverOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:checked + label:active:before {
+  background: url("../img/checkbox/activeON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:active + label::before {
+  background: url("../img/checkbox/activeOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:disabled + label::before {
+  background: url("../img/checkbox/disableOFF.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:checked:disabled + label::before {
+  background: url("../img/checkbox/disableON.png") no-repeat center;
+}
+
+.checkbox-container-checkbox--disable:disabled + label {
+  color: #dddddd;
+}
+
+.switch-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.switch-container input[type="checkbox"] {
+  display: none;
+}
+
+.switch-container label {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.switch-container__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+  margin: 0 0 15px 0;
+}
+
+.switch-container-switch {
+  margin: 10px;
+}
+
+.switch-container-switch--active + label {
+  display: block;
+  width: 51px;
+  height: 31px;
+  background: url("../img/switch/On.png");
+  border-radius: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switch-container-switch--active:checked + label {
+  background: url("../img/switch/Off.png") no-repeat center;
+}
+
+.switch-container-switch--active:disabled + label {
+  background: url("../img/switch/disableOff.png") no-repeat center;
+}
+
+.switch-container-switch--active:checked:disabled + label {
+  background: url("../img/switch/disableOn.png") no-repeat center;
+}
+
+.switch-container-switch--disable + label {
+  display: block;
+  width: 51px;
+  height: 31px;
+  background: url("../img/switch/On.png");
+  border-radius: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.switch-container-switch--disable:checked + label {
+  background: url("../img/switch/Off.png") no-repeat center;
+}
+
+.switch-container-switch--disable:disabled + label {
+  background: url("../img/switch/disableOff.png") no-repeat center;
+}
+
+.switch-container-switch--disable:checked:disabled + label {
+  background: url("../img/switch/disableOn.png") no-repeat center;
+}
+
+.input-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 30px 0 0 0;
+}
+
+.input-container input[type="checkbox"] {
+  display: none;
+}
+
+.input-container span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #949fb7;
+}
+
+.input-container label {
+  font-size: 11px;
+  line-height: 13px;
+  color: #ed6262;
+}
+
+.input-container__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+  margin: 0 0 15px 0;
+}
+
+.input-container-input {
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.input-container-input--active {
+  width: 251px;
+  height: 40px;
+  border: 1px solid #d7dff2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 0 0 15px;
+}
+
+.input-container-input--active:hover {
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--active:active {
+  background: #f7f8fa;
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--active:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--active:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--active:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--active:focus::placeholder {
+  color: transparent;
+}
+
+.input-container-input--active:required {
+  border: 1px solid #ed6262;
+}
+
+.input-container-input--active:disabled {
+  border: 1px solid #ebeef5;
+}
+
+.input-container-input--active:disabled::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--active:disabled:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--active:disabled::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--active:disabled::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--disable {
+  width: 251px;
+  height: 40px;
+  border: 1px solid #d7dff2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 0 0 15px;
+}
+
+.input-container-input--disable:hover {
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--disable:active {
+  background: #f7f8fa;
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--disable:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--disable:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--disable:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--disable:focus::placeholder {
+  color: transparent;
+}
+
+.input-container-input--disable:required {
+  border: 1px solid #ed6262;
+}
+
+.input-container-input--disable:disabled {
+  border: 1px solid #ebeef5;
+}
+
+.input-container-input--disable:disabled::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--disable:disabled:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--disable:disabled::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--disable:disabled::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--required {
+  width: 251px;
+  height: 40px;
+  border: 1px solid #d7dff2;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 0 0 0 15px;
+}
+
+.input-container-input--required:hover {
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--required:active {
+  background: #f7f8fa;
+  border: 1px solid #abb4cb;
+}
+
+.input-container-input--required:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--required:focus:-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--required:focus::-ms-input-placeholder {
+  color: transparent;
+}
+
+.input-container-input--required:focus::placeholder {
+  color: transparent;
+}
+
+.input-container-input--required:required {
+  border: 1px solid #ed6262;
+}
+
+.input-container-input--required:disabled {
+  border: 1px solid #ebeef5;
+}
+
+.input-container-input--required:disabled::-webkit-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--required:disabled:-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--required:disabled::-ms-input-placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.input-container-input--required:disabled::placeholder {
+  font-size: 16px;
+  line-height: 19px;
+  color: #c2cde6;
+}
+
+.activeBody {
+  display: block !important;
+}
+
+.activeIcon {
+  background: url("../img/selector/icon_active.png") no-repeat !important;
+}
+
+.selector-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.selector-container__text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #596172;
+  margin: 30px 0 15px 0;
+}
+
+.selector-container__text span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+  color: #949fb7;
+}
+
+.selector-container-selector__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px 10px 0px 15px;
+  width: 251px;
+  height: 40px;
+  background: #f7f8fa;
+  border: 1px solid #abb4cb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0f1b33;
+}
+
+.selector-container-selector__header__icon {
+  width: 10px;
+  height: 6px;
+  background: url("../img/selector/icon_disable.png") no-repeat;
+}
+
+.selector-container-selector__header__icon:hover {
+  cursor: url(../img/selector/cursor.png) 4 4, pointer !important;
+}
+
+.selector-container-selector-body {
+  display: none;
+  margin: 4px 0;
+  background: #f7f8fa;
+  border: 1px solid #abb4cb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 7px;
+  padding: 0px 0px 0px 15px;
+}
+
+.selector-container-selector-body__value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #939aab;
+}
+
+.selector-container-selector-body__value:hover {
+  font-size: 16px;
+  line-height: 19px;
+  color: #0f1b33;
+  cursor: url(../img/selector/cursor.png) 4 4, pointer !important;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}

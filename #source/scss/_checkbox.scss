@@ -1,0 +1,71 @@
+@mixin checkbox {
+  & + label::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 20px;
+    height: 20px;
+    background: url("../img/checkbox/checkboxOFF.png") no-repeat center;
+  }
+  & + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  &:checked + label::before {
+    background: url("../img/checkbox/checkboxON.png") no-repeat center;
+  }
+  &:checked + label:hover:before {
+    background: url("../img/checkbox/hoverON.png") no-repeat center;
+  }
+  &:hover + label::before {
+    background: url("../img/checkbox/hoverOFF.png") no-repeat center;
+  }
+  &:checked + label:active:before {
+    background: url("../img/checkbox/activeON.png") no-repeat center;
+  }
+  &:active + label::before {
+    background: url("../img/checkbox/activeOFF.png") no-repeat center;
+  }
+  &:disabled + label::before {
+    background: url("../img/checkbox/disableOFF.png") no-repeat center;
+  }
+  &:checked:disabled + label::before {
+    background: url("../img/checkbox/disableON.png") no-repeat center;
+  }
+  &:disabled + label {
+    color: #dddddd;
+  }
+}
+
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 30px 0 0 0;
+  input[type="checkbox"] {
+    display: none;
+  }
+  label {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #596172;
+    margin: 0 0 15px 0;
+  }
+  &-checkbox {
+    margin: 10px;
+    &--active {
+      @include checkbox;
+    }
+    &--disable {
+      @include checkbox;
+    }
+  }
+}

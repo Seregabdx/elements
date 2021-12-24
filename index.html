@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <div class="buttons-container">
+            <div class="buttons-container-prim">
+                <div class="buttons-container-prim__text"><span>Buttons</span> primary</div>
+                <input class="buttons-container-prim__primary" type="button" value="Button">
+                <input disabled class="buttons-container-prim__primary" type="button" value="Button">
+            </div>
+            <div class="buttons-container-sec">
+                <div class="buttons-container-sec__text"><span>Buttons</span> secondary</div>
+                <input class="buttons-container-sec__secondary" type="button" value="Button">
+                <input disabled class="buttons-container-sec__secondary" type="button" value="Button">
+            </div>
+            
+        </div>
+        <div class="radio-buttons-container">
+            <div class="radio-buttons-container-On">
+                <div class="radio-buttons-container-On__text"><span>Radio buttons</span> On</div>
+                <div class="radio-buttons-container-On-but">
+                    <input id="radio-button1" checked class="radio-buttons-container-On-but__On" type="radio" > <label for="radio-button1">Label</label>
+                </div>
+                <div class="radio-buttons-container-On-but">
+                    <input id="radio-button2" checked disabled class="radio-buttons-container-On-but__On" type="radio" > <label for="radio-button2">Label</label>
+                </div>
+            </div>
+            <div class="radio-buttons-container-Off">
+                <div class="radio-buttons-container-Off__text"><span>Radio buttons</span> Off</div>
+                <div class="radio-buttons-container-Off-but">
+                    <input id="radio-button3" class="radio-buttons-container-Off-but__Off" type="radio" > <label for="radio-button3">Label</label>
+                </div>
+                <div class="radio-buttons-container-Off-but">
+                    <input id="radio-button4" disabled class="radio-buttons-container-Off-but__Off" type="radio" > <label for="radio-button4">Label</label>
+                </div>
+            </div>
+        </div>
+        <div class="checkbox-container">
+            <div class="checkbox-container__text">Checkbox</div>
+            <div class="checkbox-container-checkbox">
+                <input id="checkbox-1" class="checkbox-container-checkbox--active" type="checkbox" > <label for="checkbox-1">Label</label>
+            </div>
+            <div class="checkbox-container-checkbox">
+                <input id="checkbox-2" disabled class="checkbox-container-checkbox--disable" type="checkbox" > <label for="checkbox-2">Label</label>
+            </div>
+            <div class="checkbox-container-checkbox">
+                <input id="checkbox-2" checked disabled class="checkbox-container-checkbox--disable" type="checkbox" > <label for="checkbox-2">Label</label>
+            </div>
+        </div>
+        <div class="switch-container">
+            <div class="switch-container__text">Switch</div>
+            <div class="switch-container-switch">
+                <input id="switch-1" class="switch-container-switch--active" type="checkbox" > <label for="switch-1"></label>
+            </div>
+            <div class="switch-container-switch">
+                <input id="switch-2" disabled class="switch-container-switch--disable" type="checkbox" > <label for="switch-2"></label>
+            </div>
+            <div class="switch-container-switch">
+                <input id="switch-2" checked disabled class="switch-container-switch--disable" type="checkbox" > <label for="switch-2"></label>
+            </div>
+        </div>
+        <div class="input-container">
+            <div class="input-container__text">Input <span>Normal</span></div>
+            <div class="input-container-input">
+                <input id="input-1" class="input-container-input--active" type="text" placeholder="Placeholder" > <label for="input-1"></label>
+            </div>
+            <div class="input-container-input">
+                <input id="input-1" class="input-container-input--required" type="text" placeholder="Placeholder" value="Text" required> <label for="input-1">Error text</label>
+            </div>
+            <div class="input-container-input">
+                <input id="input-3" disabled class="input-container-input--disable" type="text" placeholder="Placeholder"> <label for="input-3"></label>
+            </div>
+        </div>
+        <div class="selector-container">
+            <div class="selector-container__text">Input <span>Selector</span></div>
+            <div class="selector-container-selector">
+                <div class="selector-container-selector__header">
+                    <div class="selector-container-selector__header__text">Placeholder </div> 
+                    <div class="selector-container-selector__header__icon"></div>
+                </div>
+                <div class="selector-container-selector-body">
+                    <div class="selector-container-selector-body__value">Placeholder1</div>
+                    <div class="selector-container-selector-body__value">Placeholder2</div>
+                    <div class="selector-container-selector-body__value">Placeholder3</div>
+                </div>
+            </div>
+        </div>
+    </main>
+<script src="js/select.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

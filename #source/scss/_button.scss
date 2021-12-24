@@ -1,0 +1,98 @@
+@mixin button {
+  margin: 30px 0 0 0;
+  width: 98px;
+  height: 43px;
+  padding: 12px 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  border: 1px solid #4690ff;
+}
+
+@mixin button--hover {
+  background: #639ef8;
+  border: 1px solid #639ef8;
+}
+
+@mixin button--pressed {
+  background: #2a7bf5;
+  border: 1px solid #2a7bf5;
+}
+
+@mixin button--disable {
+  background: #bfd8fc;
+  border: 1px solid #bfd8fc;
+}
+
+@mixin buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 30px 0 0 0;
+  span {
+    font-weight: 500;
+  }
+  &-prim {
+    @include buttons-container;
+    &__text {
+      color: #596172;
+      font-size: 24px;
+      font-weight: 300;
+    }
+    &__primary {
+      @include button;
+      color: #ffffff;
+      background: #4690ff;
+      &:hover {
+        @include button--hover;
+      }
+      &:active {
+        @include button--pressed;
+      }
+      &:disabled {
+        @include button--disable;
+      }
+    }
+  }
+  &-sec {
+    @include buttons-container;
+    &__text {
+      color: #596172;
+      font-size: 24px;
+      font-weight: 300;
+    }
+    &__secondary {
+      @include button;
+      background: #ffffff;
+      color: #4690ff;
+      &:hover {
+        @include button--hover;
+        background: #f1f7ff;
+        color: #639ef8;
+      }
+      &:active {
+        @include button--pressed;
+        background: #e4f0ff;
+        color: #639ef8;
+      }
+      &:disabled {
+        @include button--disable;
+        background: none;
+        border: 1px solid;
+        color: #639ff879;
+      }
+    }
+  }
+}
